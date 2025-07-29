@@ -9,7 +9,6 @@ const authRoutes = require('./routes/authRoutes')
 const app = express();
  
 app.use(express.json());
- 
 app.use(cors({                          
   origin: 'http://localhost:5173',        
   methods: ['GET','POST','PUT','DELETE'],
@@ -29,7 +28,7 @@ sequelize.authenticate()
   })
   .then(() =>{
     console.log('banco de dados sincronizado')
-    app.listen(PORT, () => console.log("SERVIDOR RODANDO NA PORTA: " + PORT))
-  }).catch(erro => console.log("Erro interno do servidor", erro))
+    app.listen(PORT, () => console.log(" SERVIDOR RODANDO NA PORTA: " + PORT))
+  }).catch(erro => console.log(" Erro interno do servidor", erro))
  
  

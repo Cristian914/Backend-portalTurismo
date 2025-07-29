@@ -1,6 +1,5 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/db');
- 
 const Contact = sequelize.define('Contact', {
     // Campo ID: chave primária, número inteiro e autoincrementável
     id: {
@@ -8,7 +7,7 @@ const Contact = sequelize.define('Contact', {
       autoIncrement: true,           // Será incrementado automaticamente
       primaryKey: true,              // Define como chave primária (PK)
     },
-   
+
     // Campo nome do usuário
     name: {
       type: DataTypes.STRING,        // Texto simples
