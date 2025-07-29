@@ -3,7 +3,7 @@ const { DataTypes } = require('sequelize');
 // Importa a instância configurada do Sequelize (conexão com o banco de dados)
 const sequelize = require('../config/db'); 
 // Define o modelo de Usuário (User)
-const User = sequelize.define('UserS', {
+const User = sequelize.define('users', {
   // Campo ID: chave primária, número inteiro e autoincrementável
   id: {
     type: DataTypes.INTEGER,       // Tipo número inteiro
