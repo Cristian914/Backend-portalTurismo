@@ -10,7 +10,7 @@ const app = express();
  
 app.use(express.json());
 app.use(cors({                          
-  origin: 'https://frontend-portal-turismo-x12p.vercel.app/',        
+  origin: 'https://frontend-portal-turismo-x12p.vercel.app',        
   methods: ['GET','POST','PUT','DELETE'],
   credentials: true
 }));
